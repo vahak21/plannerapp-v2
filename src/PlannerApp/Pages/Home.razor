@@ -8,10 +8,10 @@ Welcome to your new app.
 
 <AuthorizeView>
     <Authorized>
-        <h2>Welcome @context.User.FindFirst(System.Security.Claims.ClaimTypes.GivenName).Value</h2>
+        <h2>Welcome</h2>
     </Authorized>
     <NotAuthorized>
-        <h2>Please login</h2>
+        <MudLink Href="/authentication/login">Login</MudLink>
     </NotAuthorized>
 </AuthorizeView>
 @code{
